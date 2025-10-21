@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mane Majstorovic - Engineering Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Portfolio</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#community" class="nav-link">Community</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#activities" class="nav-link">Activities</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Hi, I'm <span class="highlight">Mane Majstorovic</span>
+                </h1>
+                <h2 class="hero-subtitle">Aspiring Mechanical Engineer • Community Leader • Innovation Driven</h2>
+                <p class="hero-description">
+                    High school senior at Palisades Charter High School passionate about applying engineering 
+                    to solve real-world humanitarian challenges. From restoring 8,000-pound industrial machinery 
+                    to designing emergency water filtration systems for disaster relief, I combine technical 
+                    expertise with social impact to create meaningful change.
+                </p>
+                <div class="hero-highlights">
+                    <div class="highlight-item">
+                        <i class="fas fa-trophy"></i>
+                        <span>AP Scholar with Distinction</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-hands-helping"></i>
+                        <span>7,000+ lbs Food Donated</span>
+                    </div>
+                    <div class="highlight-item">
+                        <i class="fas fa-cogs"></i>
+                        <span>Humanitarian Engineering Projects</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToProjects()">View My Projects</button>
+                    <button class="btn btn-secondary" onclick="scrollToExperience()">My Experience</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-image">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Engineering Projects & Innovation</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-gallery">
+                            <div class="main-image">
+                                <img src="standing.jpg" alt="MTS Flat Trac Machine" class="project-photo">
+                                <div class="image-overlay">
+                                    <i class="fas fa-expand"></i>
+                                </div>
+                            </div>
+                            <div class="thumbnail-gallery">
+                                <div class="thumbnail active" data-image="1">
+                                    <img src="standing.jpg" alt="Main Machine">
+                                </div>
+                                <div class="thumbnail" data-image="2">
+                                    <img src="machine tilted.png" alt="Machine Tilted">
+                                </div>
+                                <div class="thumbnail" data-image="3">
+                                    <img src="ladder.png" alt="Working on Machine">
+                                </div>
+                                <div class="thumbnail" data-image="4">
+                                    <img src="group photo.png" alt="Team Photo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Industrial Machinery Restoration - Engineering Apprenticeship</h3>
+                        <p>Independently restored an 8,000+ pound MTS Flat Trac tire testing machine during my apprenticeship at Sumitomo Rubber Industries. Collaborated with Doug Milliken (co-author of Race Car Vehicle Dynamics) to diagnose complex mechanical and electrical systems. This experience provided hands-on exposure to materials science, industrial engineering, and systematic problem-solving in a professional environment.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Materials Science</span>
+                            <span class="tech-tag">Mechanical Engineering</span>
+                            <span class="tech-tag">Industrial Systems</span>
+                            <span class="tech-tag">Hydraulics</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectModal('flattrac')">
+                                <i class="fas fa-info-circle"></i>
+                                More Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <video class="project-video" autoplay loop muted playsinline>
+                            <source src="Hand cranking(1).mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <div class="video-badge">
+                            <i class="fas fa-play-circle"></i>
+                            Video Demo
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Emergency Water Filtration System</h3>
+                        <p>Engineered a hand-cranked water purification device for disaster relief, addressing critical water access needs during emergencies. This humanitarian engineering project demonstrates practical application of mechanical design principles to solve real-world crises, inspired by the Pacific Palisades wildfires.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Mechanical Design</span>
+                            <span class="tech-tag">3D Printing</span>
+                            <span class="tech-tag">Emergency Response</span>
+                            <span class="tech-tag">Humanitarian Engineering</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link" onclick="openProjectModal('waterfiltration')">
+                                <i class="fas fa-info-circle"></i>
+                                More Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI-Powered Mobile Application</h3>
+                        <p>Developed and published CarScan AI, a mobile application that leverages artificial intelligence for vehicle recognition and analysis. This project demonstrates proficiency in mobile development, AI integration, and persistence through technical challenges—successfully deploying a consumer-facing product to the App Store.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Mobile Development</span>
+                            <span class="tech-tag">AI Integration</span>
+                            <span class="tech-tag">App Store</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <i class="fas fa-info-circle"></i>
+                                More Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Engineering Apprenticeship & Internship</h3>
+                        <span class="company">Sumitomo Rubber Industries</span>
+                        <span class="duration">Summer 2025</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Fully restored and operated an 8,000+ pound MTS Flat Trac tire testing machine</li>
+                            <li>Worked alongside Doug Milliken, co-author of Race Car Vehicle Dynamics</li>
+                            <li>Independently diagnosed and repaired mechanical and electrical systems</li>
+                            <li>Oversaw logistics of disassembling, transporting, and reassembling the system</li>
+                            <li>Gained hands-on experience in materials science, polymers, and industrial-scale engineering machinery</li>
+                            <li>Relocated machine to Serbia for continued research and experimentation</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Co-Founder & President</h3>
+                        <span class="company">Revive Detailing (D2D Car Detailing Business)</span>
+                        <span class="duration">2023–2025</span>
+                    </div>
+                    <div class="experience-content">
+                        <ul>
+                            <li>Built a Car Detailing Business generating 5-figure revenue</li>
+                            <li>Developed interpersonal skills and confidence through door-to-door sales</li>
+                            <li>Managed business operations and customer relationships</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Academic Excellence</h2>
+            <div class="education-content">
+                <div class="school-info">
+                    <h3>Palisades Charter High School</h3>
+                    <p class="location">Pacific Palisades, CA</p>
+                    <p class="graduation">Expected Graduation: June 2026</p>
+                    
+                    <div class="academic-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Unweighted GPA</span>
+                            <span class="stat-value">3.81</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Weighted GPA</span>
+                            <span class="stat-value">4.3</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">AP Courses</span>
+                            <span class="stat-value">10+</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="ap-scores">
+                    <h4>Advanced Placement Scores</h4>
+                    <div class="scores-grid">
+                        <div class="score-item">
+                            <span class="course">AP European History</span>
+                            <span class="score">5</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="course">AP United States History</span>
+                            <span class="score">5</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="course">AP Environmental Science</span>
+                            <span class="score">4</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="course">AP Psychology</span>
+                            <span class="score">4</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="course">AP English Language</span>
+                            <span class="score">4</span>
+                        </div>
+                        <div class="score-item">
+                            <span class="course">AP Computer Science Principles</span>
+                            <span class="score">3</span>
+                        </div>
+                    </div>
+                    <p class="award-note"><i class="fas fa-trophy"></i> AP Scholar with Distinction • Rigorous STEM-focused curriculum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Impact Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">Leadership & Community Impact</h2>
+            <div class="community-grid">
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Harvest Hope - Nonprofit Founder</h3>
+                    <p>Co-founded and serve as president of a student-run 501(c)(3) nonprofit addressing food insecurity. Developed a sustainable food transportation network that has donated 7,000+ pounds of fresh produce to underserved communities. Demonstrates entrepreneurial leadership, community engagement, and commitment to social impact.</p>
+                    <div class="community-stats">
+                        <span class="stat-number">7,000+</span>
+                        <span class="stat-label">Pounds Donated</span>
+                    </div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <h3>RestorePali.org - Crisis Response Initiative</h3>
+                    <p>Designed and deployed a rapid-response web platform connecting wildfire victims with essential resources during the Pacific Palisades fires. This project exemplifies quick-thinking problem-solving and technical skills applied to urgent community needs during natural disasters.</p>
+                    <div class="community-stats">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Community Focused</span>
+                    </div>
+                </div>
+                
+                <div class="community-card">
+                    <div class="community-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>First Generation Student Union - Co-Founder</h3>
+                    <p>Established a student organization creating support networks for first-generation college-bound students. As a first-generation student myself, I'm committed to ensuring all students have access to resources, mentorship, and community support needed to succeed in higher education.</p>
+                    <div class="community-stats">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Clubs Founded</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Engineering & Design</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-cube"></i>
+                            <span>CATIA V5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-cogs"></i>
+                            <span>Mechanical Systems</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-atom"></i>
+                            <span>Materials Science</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-tools"></i>
+                            <span>Machine Restoration</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-industry"></i>
+                            <span>Industrial Engineering</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming & Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>App Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-robot"></i>
+                            <span>AI Automation</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Leadership & Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <i class="fas fa-users"></i>
+                            <span>Nonprofit Leadership</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-language"></i>
+                            <span>Serbian/Croatian</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-handshake"></i>
+                            <span>Community Building</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-leaf"></i>
+                            <span>Sustainability</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lightbulb"></i>
+                            <span>Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Activities & Leadership Section -->
+    <section id="activities" class="activities">
+        <div class="container">
+            <h2 class="section-title">Activities & Leadership</h2>
+            <div class="activities-grid">
+                <div class="activity-category">
+                    <h3>Leadership Positions</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Co-Founder & President</h4>
+                                <p class="organization">Harvest Hope (Nonprofit Organization)</p>
+                                <p class="description">Established and executed a food transportation network, donating 7,000+ pounds of fresh food to people in need in partnership with NourishLA</p>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Co-Founder</h4>
+                                <p class="organization">First Generation Student Union</p>
+                                <p class="description">Created a supportive community for first-generation students to share experiences and empower each other</p>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Co-Founder</h4>
+                                <p class="organization">World of Business Club</p>
+                                <p class="description">Established business-focused student organization</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="activity-category">
+                    <h3>Club Memberships</h3>
+                    <div class="activity-list">
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Member</h4>
+                                <p class="organization">Model UN</p>
+                                <p class="description">Participated in Model United Nations activities</p>
+                            </div>
+                        </div>
+                        
+                        <div class="activity-item">
+                            <div class="activity-icon">
+                                <i class="fas fa-seedling"></i>
+                            </div>
+                            <div class="activity-content">
+                                <h4>Co-Founder</h4>
+                                <p class="organization">Harvest Hope Club</p>
+                                <p class="description">Student organization supporting the nonprofit mission</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a prospective mechanical engineering student, I'm driven by the belief that 
+                        engineering should serve humanity. My academic journey at Palisades Charter High School, 
+                        combined with hands-on experience in materials science and mechanical systems, has 
+                        prepared me to tackle complex engineering challenges in college and beyond.
+                    </p>
+                    <p>
+                        Through my apprenticeship at Sumitomo Rubber Industries and founding multiple 
+                        community organizations, I've learned that the most impactful engineering happens 
+                        at the intersection of technical skill and social responsibility. I'm excited to 
+                        bring this perspective to a university environment where I can continue developing 
+                        innovative solutions that make a difference.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>7000+</h3>
+                            <p>Pounds Food Donated</p>
+                        </div>
+                        <div class="stat">
+                            <h3>8000+</h3>
+                            <p>Pound Machine Restored</p>
+                        </div>
+                        <div class="stat">
+                            <h3>3</h3>
+                            <p>Organizations Founded</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's Connect!</h3>
+                    <p>I'm excited about opportunities to contribute to innovative engineering programs and research initiatives. Whether you're an admissions officer, researcher, or fellow student interested in collaborative projects, I'd love to connect and discuss how I can bring my passion for humanitarian engineering to your institution.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>mane.majstorov@gmail.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>310-745-3455</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Los Angeles, California</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Mane Majstorovic. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Project Details</h2>
+                <button class="close-btn" onclick="closeProjectModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-gallery">
+                    <div class="modal-main-image" id="modalMainImageContainer">
+                        <button class="gallery-arrow gallery-arrow-prev" onclick="prevImage()">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <div id="modalMainImage" style="width: 100%; height: 100%; transition: opacity 0.3s ease;"></div>
+                        <button class="gallery-arrow gallery-arrow-next" onclick="nextImage()">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div class="image-counter">
+                            <span id="currentImage">1</span> / <span id="totalImages">4</span>
+                        </div>
+                    </div>
+                    <div class="modal-thumbnails" id="modalThumbnails">
+                        <!-- Thumbnails will be populated by JavaScript -->
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-description" id="modalDescription">
+                        <!-- Description will be populated by JavaScript -->
+                    </div>
+                    <div class="modal-tech" id="modalTech">
+                        <!-- Tech tags will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
