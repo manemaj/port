@@ -1,0 +1,18 @@
+Project Name:
+
+Fidget Spinner Project
+
+
+Objective:
+
+Incorporating existing, readily available components (skate-board bearings), learning CAM, physical assembly, testing
+
+
+Challenges:
+
+Learning how to work with CAM, understanding about tool selection and too-path strategy, work-holding, materials, tolerances and fitment
+
+
+Result:
+
+Working fidget spinner, perhaps it wasn't as balanced as it could have been but my friends were super impressed about the fact that I built it in my garage.
